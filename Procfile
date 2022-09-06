@@ -1,1 +1,1 @@
-web: gunicorn wild-eden.wsgi
+web: gunicorn Eden.wsgi
