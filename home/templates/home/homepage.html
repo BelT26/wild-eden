@@ -1,9 +1,56 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block extra_css %}
+<!-- link to custom css file -->
+<link rel="stylesheet" href="{% static 'home/css/home.css' %}">
+{% endblock %}
+
 
 {% block content %}
-Home
+
 <img src="{% static 'home/images/home_main.jpg' %}" alt="photograph of colourful wild flowers" id="home-page-hero-img"
-    class="d-block" height="500">
+    class="d-block" />
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="display-4">About Us</h2>
+            <p>We provide garden maintenance packages of outstanding quality in the Dorking area to suit all garden
+                sizes and budgets, from a quick trim and tidy to a full garden clearance, and everything in between!
+                View the Gallery page for beautiful before/after pictures.</p>
+            <p>We pride ourselves in offering a friendly, reliable, value for money service to our customers, many of
+                whom have been benefitting from our unique style for over 15 years.</p>
+            <p>Contact us via our Contact page or give Nick a call on 07929-377464</p>
+        </div>
+    </div>
+</div>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <p class="d-block w-100">‘To the team, I am hugely impressed with the work you completed and not only the quantity but the manner in which you worked.  Nothing was too much trouble, and you left the garden very tidy – Thank you!!!’
+                Andrew, Dorking
+                </p>
+        </div>
+        <div class="carousel-item">
+            <p class="d-block w-100"></p>
+        </div>
+        <div class="carousel-item">
+            <p class="d-block w-100"></p>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
 {% endblock %}

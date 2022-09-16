@@ -1,0 +1,30 @@
+.custom-navbar,
+.main-footer {
+    background-color: forestgreen !important;
+    color: white !important;
+}
+
+#nav-log {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.main-footer a {
+    color: white;
+}
+
+.main-footer li {
+    display: inline-block;
+    list-style: none;
+}
+
+.main-footer i {
+    font-size: 2rem;
+    padding-top: 20px;
+}
+
+.main-footer i:active,
+.main-footer i:hover {
+    font-size: 2.2rem;
+}
