@@ -8,20 +8,42 @@
 
 
 {% block content %}
+<div class="contatiner-fluid text-center">
+    <img src="{% static 'home/images/home_main.jpg' %}" alt="photograph of colourful wild flowers"
+        id="home-page-hero-img" class="d-block" />
+    <div class="container" id="homepage-text-container">
+        <h1 class="hero-font" id="homepage-img-text">WiLd Eden</h1>
+        <h2 id="homepage-caption">Caption text will go on this line</h2>
+    </div>
+</div>
 
-<img src="{% static 'home/images/home_main.jpg' %}" alt="photograph of colourful wild flowers" id="home-page-hero-img"
-    class="d-block" />
-
-<div class="container">
+<div class="container mb-4" id="about-container">
     <div class="row">
-        <div class="col-12">
-            <h2 class="display-4">About Us</h2>
-            <p>We provide garden maintenance packages of outstanding quality in the Dorking area to suit all garden
-                sizes and budgets, from a quick trim and tidy to a full garden clearance, and everything in between!
-                View the Gallery page for beautiful before/after pictures.</p>
-            <p>We pride ourselves in offering a friendly, reliable, value for money service to our customers, many of
-                whom have been benefitting from our unique style for over 15 years.</p>
-            <p>Contact us via our Contact page or give Nick a call on 07929-377464</p>
+        <div class="col-12 text-center">
+            <h2 class="display-4 mb-4">About Us</h2>
+            <div class="row">
+                <div class="col-12 col-lg-7 text-left">
+                    <p>We provide garden maintenance packages of outstanding quality in the Dorking area to suit all
+                        garden
+                        sizes and budgets, from a quick trim and tidy to a full garden clearance, and everything in
+                        between!
+                        View the Gallery page for beautiful before/after pictures.</p>
+                    <p>We pride ourselves in offering a friendly, reliable, value for money service to our customers,
+                        many of
+                        whom have been benefitting from our unique style for over 15 years.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptate dolor quam laudantium
+                        mollitia? Fugiat, non! Quidem vero quo, nemo ullam maxime rem architecto doloremque consequuntur
+                        ut provident voluptas nesciunt.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero consequatur esse labore minus
+                        aliquam aliquid, alias maxime deserunt non, amet, vel tempore sint nobis facilis nostrum
+                        nesciunt ut illum corrupti?</p>
+                </div>
+                <div class="col12 col-lg-5">
+                    <img src="{% static 'home/images/walkway.jpg' %}" id="walkway-img"
+                        alt="grass pathway bordered by wild flowers" height="300" />
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
@@ -31,17 +53,38 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
-    <div class="carousel-inner">
+    <div class="carousel-inner testimonial">
         <div class="carousel-item active">
-            <p class="d-block w-100">‘To the team, I am hugely impressed with the work you completed and not only the quantity but the manner in which you worked.  Nothing was too much trouble, and you left the garden very tidy – Thank you!!!’
-                Andrew, Dorking
+            <blockquote class="blockquote text-center p-5">
+                <p class="m-5 px-5">'To the team, I am hugely impressed with the work you completed and not only the
+                    quantity but the manner in which you worked. Nothing was too much trouble, and you left the garden
+                    very
+                    tidy – Thank you!!!''
                 </p>
+                <footer class="blockquote-footer">Andrew, <cite title="Source Title">Dorking</cite>
+                </footer>
+            </blockquote>
         </div>
         <div class="carousel-item">
-            <p class="d-block w-100"></p>
+            <blockquote class="blockquote text-center p-5">
+                <p class="m-5 px-5">'Your advice and input has transformed our garden and it has become a constant
+                    source
+                    of joy'
+                </p>
+                <footer class="blockquote-footer">Sue, <cite title="Source Title">Brockman</cite>
+                </footer>
+            </blockquote>
         </div>
         <div class="carousel-item">
-            <p class="d-block w-100"></p>
+            <blockquote class="blockquote text-center p-5">
+                <p class="m-5 px-5">'I wanted to make a point of thanking you and your team for the way you managed the
+                    garden
+                    for the wedding reception…..the garden does generally look good of course, but this time was a
+                    stunning achievement. Every single guest I talked to told me how beautiful the garden was looking'
+                </p>
+                <footer class="blockquote-footer">John, <cite title="Source Title">Shalford</cite>
+                </footer>
+            </blockquote>
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
