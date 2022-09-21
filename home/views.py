@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .forms import ContactForm
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse
+from .models import Plant
 
 
 # Create your views here
@@ -54,7 +55,8 @@ def plants(request):
     """
     returns a page with a list of available plants
     """
-    return render(request, 'home/plants.html')
+    all_plants = Plant.objects.all()
+    return render(request, 'home/plants.html', {'plants': all_plants})
 
 
 def makeovers(request):
