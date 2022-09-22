@@ -4,6 +4,8 @@
 
 .green-border {
     border: 1px solid rgb(1, 35, 1) !important;
+    border-radius: 0 !important;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 #home-page-hero-img {
@@ -39,4 +41,72 @@
 .testimonial {
     background-color: rgb(191, 211, 191);
     height: 35vh;
+}
+
+.cf {
+    position: relative;
+    height: 500px;
+    width: 700px;
+    margin: 20px auto;
+}
+
+.cf img {
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity 1.5s ease-in-out;
+    -moz-transition: opacity 1.5s ease-in-out;
+    -o-transition: opacity 1.5s ease-in-out;
+    transition: opacity 1.5s ease-in-out;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    padding: 2em;
+    border: solid 4px darkgreen;
+    background-color: white;
+}
+
+.cf img.top:hover {
+    opacity: 0;
+    background-color: white;
+}
+
+.custom-button {
+    background-color: forestgreen;
+    color: white;
+}
+
+.custom-button:hover,
+.custom-button:active {
+    background-color: rgb(79, 138, 79);
+}
+
+/* media queries */
+
+@media screen and (max-width: 480px) {
+    .cf img {
+        height: 275px;
+        width: 385px;
+        padding: 1em;
+    }
+
+    .cf {
+        position: relative;
+        height: 280px;
+        width: 420px;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .cf img {
+        height: 250px;
+        width: 350px;
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .cf img {
+        height: 200px;
+        width: 280px;
+        padding: 1em;
+    }
 }

@@ -7,7 +7,7 @@
 
 {% block content %}
 <div class="container">
-    <div class="row">
+    <div class="row mt-3">
         <div class="col-12 text-center">
             <h1 class="heading display-4">Plants</h1>
         </div>
@@ -15,11 +15,11 @@
     <div class="row">
         {% for plant in plants %}
         <div class="col-12 col-md-6 col-lg-4 px-5 pb-5">
-            <div class="card my-5 mx-auto green-border" style="width: 12rem;">
+            <div class="card my-5 mx-auto green-border" style="width: 14rem;">
                 {% if "placeholder" in plant.image.url %}
-                <img class="card-img-top" src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
+                <img class="card-img-top" src="{% static 'home/images/green_plant.jpg' %}">
                 {% else %}
-                <img class="card-img-top" src=" {{ plant.image.url }}" height="250" alt="{{plant.name}}">
+                <img class="card-img-top" src=" {{ plant.image.url }}" height="270" alt="{{plant.name}}">
                 {% endif %}
                 <!-- <img src="{{plant.image}}" class="card-img-top m-2" alt="{{plant.name}}"> -->
                 <div class="card-body">
