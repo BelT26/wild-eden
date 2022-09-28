@@ -57,10 +57,12 @@
     -moz-transition: opacity 1.5s ease-in-out;
     -o-transition: opacity 1.5s ease-in-out;
     transition: opacity 1.5s ease-in-out;
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    -webkit-box-shadow: 5px 5px 13px 0px rgba(0, 0, 0, 0.51);
+    box-shadow: 5px 5px 13px 0px rgba(0, 0, 0, 0.51);
     padding: 2em;
-    border: solid 4px darkgreen;
+    border: solid 2px rgb(1, 35, 1);
     background-color: white;
+    margin: 0 auto;
 }
 
 .cf img.top:hover {
@@ -98,8 +100,8 @@
 @media screen and (max-width: 420px) {
     .cf img {
         height: 250px;
-        width: 350px;
-        padding: 1em;
+        width: 330px;
+        padding: 0.5em;
     }
 }
 
@@ -107,6 +109,6 @@
     .cf img {
         height: 200px;
         width: 280px;
-        padding: 1em;
+        padding: 0.5em;
     }
 }
