@@ -15,16 +15,16 @@
     <div class="row">
         {% for plant in plants %}
         <div class="col-12 col-md-6 col-lg-4 px-5 pb-5">
-            <div class="card my-5 mx-auto green-border" style="width: 14rem;">
+            <div class="my-5 mx-auto text-center" style="width: 15rem;">
                 {% if "placeholder" in plant.image.url %}
-                <img class="card-img-top" src="{% static 'home/images/green_plant.jpg' %}">
+                <img src="{% static 'home/images/green_plant.jpg' %}">
                 {% else %}
-                <img class="card-img-top" src=" {{ plant.image.url }}" height="270" alt="{{plant.name}}">
+                <img src=" {{ plant.image.url }}" height="270" alt="{{plant.name}}">
                 {% endif %}
                 <!-- <img src="{{plant.image}}" class="card-img-top m-2" alt="{{plant.name}}"> -->
-                <div class="card-body">
-                    <h5 class="card-title font-weight-bold">{{plant.name}}</h5>
-                    <p class="card-text">Season: {{plant.season}}</p>
+                <div>
+                    <h5 class="text-center font-weight-bold my-2">{{plant.name}}</h5>
+                    <p>Season: {{plant.season}}</p>
                     <p class="card-text">Location: {{plant.location}}</p>
                     <p class="card-text">Price: £{{plant.price}}</p>
                 </div>

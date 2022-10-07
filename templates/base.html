@@ -47,13 +47,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="{% url 'home' %}">Home <span
-                        class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="{% url 'makeovers' %}">Gallery</a>
-                <a class="nav-item nav-link" href="{% url 'services' %}">Services</a>
-                <a class="nav-item nav-link" href="{% url 'plants' %}">Plants</a>
-                <a class="nav-item nav-link" href="{% url 'faqs' %}">FAQs</a>
-                <a class="nav-item nav-link" href="{% url 'contact' %}">Contact</a>
+                <a class="nav-item nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}"
+                    href="{% url 'home' %}">Home</a>
+                <a class="nav-item nav-link {% if request.resolver_match.url_name == 'makeovers' %}active{% endif %}"
+                    href="{% url 'makeovers' %}">Gallery</a>
+                <a class="nav-item nav-link {% if request.resolver_match.url_name == 'services' %}active{% endif %}"
+                    href="{% url 'services' %}">Services</a>
+                <a class="nav-item nav-link {% if request.resolver_match.url_name == 'plants' %}active{% endif %}"
+                    href="{% url 'plants' %}">Plants</a>
+                <a class="nav-item nav-link {% if request.resolver_match.url_name == 'faqs' %}active{% endif %}"
+                    href="{% url 'faqs' %}">FAQs</a>
+                <a class="nav-item nav-link {% if request.resolver_match.url_name == 'contact' %}active{% endif %}"
+                    href="{% url 'contact' %}">Contact</a>
             </div>
         </div>
     </nav>
@@ -94,9 +99,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+    <script>
+        $('a[href="' + this.location.pathname + '"]').parents('li,ul').addClass('active');
+    </script>
     <script src="https://kit.fontawesome.com/5f4fa16565.js" crossorigin="anonymous"></script>
     {% block extra_js %}
     {% endblock %}
+
 </body>
 
 </html>

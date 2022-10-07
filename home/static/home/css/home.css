@@ -45,8 +45,8 @@
 
 .cf {
     position: relative;
-    height: 500px;
-    width: 700px;
+    height: 400px;
+    width: 550px;
     margin: 20px auto;
 }
 
@@ -57,12 +57,13 @@
     -moz-transition: opacity 1.5s ease-in-out;
     -o-transition: opacity 1.5s ease-in-out;
     transition: opacity 1.5s ease-in-out;
-    -webkit-box-shadow: 5px 5px 13px 0px rgba(0, 0, 0, 0.51);
-    box-shadow: 5px 5px 13px 0px rgba(0, 0, 0, 0.51);
-    padding: 2em;
-    border: solid 2px rgb(1, 35, 1);
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.51);
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.51);
+
     background-color: white;
     margin: 0 auto;
+    height: 380px;
+    width: 550px;
 }
 
 .cf img.top:hover {
