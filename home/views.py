@@ -64,3 +64,9 @@ def makeovers(request):
     returns a page with examples of garden makeovers
     """
     return render(request, 'home/makeovers.html')
+
+def gallery(request):
+    """
+    returns a view of the gallery
+    """
+    return render(request, 'home/gallery.html')
