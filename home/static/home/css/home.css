@@ -71,13 +71,18 @@
 }
 
 .large-makeover-pic img {
-    height: 360px !important;
-    width: 540px !important;
+    height: 300px !important;
+    width: 450px !important;
 }
 
 .small-makeover-pic img {
     height: 300px !important;
-    width: 400px !important;
+    width: 420px !important;
+}
+
+.medium-makeover-pic img {
+    height: 300px !important;
+    width: 420px !important;
 }
 
 
