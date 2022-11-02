@@ -11,8 +11,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Gardening services Reigate">
-    <meta name="keywords" content="gardening, garden, gardeners, recommended, surrey, reigate">
+    <meta name="description"
+        content="Wild Eden provides gardening services in Surrey and surrounding areas. Experts in landscape design, landscaping, lawn care, planting, hedge trimming and all other aspects of garden maintenance.">
+    <meta name="keywords"
+        content="gardening, garden, gardeners, recommended, surrey, reigate, dorking, lawn care, trimming, hedge pruning, tree pruning, garden maintenance surrey, gardener reigate, irrigation, gardening services, recommended, fence repairs, landscape design ">
     <meta name="author" content="Helen Taylor">
 
     <!-- Bootstrap CSS -->
@@ -28,6 +30,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32x32.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon-16x16.png' %}">
     <link rel="manifest" href="{% static 'images/site.webmanifest' %}">
+
     {% block extra_css %}
     {% endblock %}
     <title>Wild Eden {% block title %}{% endblock %}</title>
@@ -49,7 +52,7 @@
             <div class="navbar-nav">
                 <a class="nav-item nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}"
                     href="{% url 'home' %}">Home</a>
-                <a class="nav-item nav-link {% if request.resolver_match.url_name == 'makeovers' %}active{% endif %}"
+                <a class="nav-item nav-link {% if request.resolver_match.url_name == 'gallery' %}active{% endif %}"
                     href="{% url 'gallery' %}">Gallery</a>
                 <a class="nav-item nav-link {% if request.resolver_match.url_name == 'services' %}active{% endif %}"
                     href="{% url 'services' %}">Services</a>
