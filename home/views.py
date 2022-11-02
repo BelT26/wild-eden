@@ -8,7 +8,7 @@ from .models import Plant
 # Create your views here
 def homepage(request):
     """
-    returns the contact page
+    returns the home page
     """
     return render(request, 'home/homepage.html')
 
@@ -16,6 +16,13 @@ def homepage(request):
 def contact(request):
     """
     returns the contact page
+    """
+    return render(request, 'home/contact.html')
+
+
+def contactform(request):
+    """
+    returns the a page with a contact form
     """
     if request.method == 'POST':
         form = ContactForm(request.POST)
