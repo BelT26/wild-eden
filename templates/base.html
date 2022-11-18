@@ -52,10 +52,10 @@
             <div class="navbar-nav">
                 <a class="nav-item nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}"
                     href="{% url 'home' %}">Home</a>
-                <a class="nav-item nav-link {% if request.resolver_match.url_name == 'gallery' %}active{% endif %}"
-                    href="{% url 'gallery' %}">Gallery</a>
                 <a class="nav-item nav-link {% if request.resolver_match.url_name == 'services' %}active{% endif %}"
                     href="{% url 'services' %}">Services</a>
+                <a class="nav-item nav-link {% if request.resolver_match.url_name == 'gallery' %}active{% endif %}"
+                    href="{% url 'gallery' %}">Gallery</a>
                 <!-- <a class="nav-item nav-link {% if request.resolver_match.url_name == 'plants' %}active{% endif %}"
                     href="{% url 'plants' %}">Plants</a> -->
                 <a class="nav-item nav-link {% if request.resolver_match.url_name == 'faqs' %}active{% endif %}"
