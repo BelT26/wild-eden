@@ -21,17 +21,20 @@
     z-index: 50;
 }
 
-#homepage-img-text {
-    color: white;
-    font-size: 7rem;
-    text-shadow: -0.5px 0.5px 0 #014d01,
-        0.5px 0.5px 0 #014d01,
-        0.5px -0.5px 0 #014d01,
-        -0.5px -0.5px 0 #014d01;
+.large-logo-text {
+    height: 7rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 
 #homepage-caption {
     color: white;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+#walkway-img {
+    height: 580px;
 }
 
 #about-container {
@@ -41,6 +44,10 @@
 .testimonial {
     background-color: rgb(191, 211, 191);
     height: 35vh;
+}
+
+.testimonial-text {
+    font-size: 1rem;
 }
 
 .large-makeover-pic {
@@ -85,8 +92,6 @@
     width: 420px !important;
 }
 
-
-
 .cf img.top:hover {
     opacity: 0;
     background-color: white;
@@ -116,6 +121,28 @@
         height: 280px;
         width: 420px;
         margin: 20px auto;
+    }
+
+    #home-page-hero-img {
+        width: 100vw;
+        height: 60vh;
+    }
+
+    #homepage-text-container {
+        top: -16rem;
+    }
+
+    .large-logo-text {
+        height: 3.5rem;
+    }
+
+    #homepage-caption {
+        font-size: 2rem;
+    }
+
+    #walkway-img {
+        height: 420px;
+        width: auto;
     }
 }
 
