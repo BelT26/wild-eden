@@ -13,11 +13,10 @@
         <div class="col">
             <p class="lead">Our team of experienced and knowledgeable gardeners can provide a range of garden services
                 from a regular tidy up and maintenance to a full garden makeover. </p>
-
         </div>
     </div>
-    <div class="row mb-5">
-        <div class="col-12 col-lg-6 mt-lg-3">
+    <div class="row mb-5 d-flex flex-column-reverse flex-lg-row">
+        <div class="col-12 col-lg-6 mt-3">
             <h4>Our services include:</h4>
             <ul>
                 <li>Garden Design</li>
@@ -31,16 +30,17 @@
             </ul>
         </div>
         <div class="col-12 col-lg-6 d-flex align-items-center">
-            <img src="{% static 'home/images/Hampstead1.webp' %}" height="320" alt="image of a garden in Hampstead" />
+            <img src="{% static 'home/images/Hampstead1.webp' %}" alt="image of a garden in Hampstead"
+                id="hampstead-garden" height="300" class="d-none d-lg-block" />
         </div>
     </div>
 </div>
-<div class="container-fluid d-flex justify-content-center mb-4">
-    <img class="mx-4" height="250" src="{% static 'home/images/circular_flowerbed.webp' %}"
+<div class="container-fluid d-flex justify-content-center mb-4 flex-column-reverse flex-lg-row mt-2">
+    <img class="mx-4 mb-2" height="250" src="{% static 'home/images/circular_flowerbed.webp' %}"
         alt="image of a large wysteria plant" />
-    <img class="mx-4" height="250" src="{% static 'home/images/flowerbed.jpg' %}"
+    <img class="mx-4 mb-2" height="250" src="{% static 'home/images/flowerbed.jpg' %}"
         alt="image of a large wysteria plant" />
-    <img class="mx-4" height="250" src="{% static 'home/images/flower_border2.jpg' %}"
+    <img class="mx-4 mb-2" height="250" src="{% static 'home/images/flower_border2.jpg' %}"
         alt="image of a garden in Primrose Hill" />
 </div>
 {% endblock %}
