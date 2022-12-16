@@ -10,7 +10,9 @@
 {% block content %}
 <div class="contatiner-fluid text-center">
     <img src="{% static 'home/images/home_main.jpg' %}" alt="photograph of colourful wild flowers"
-        id="home-page-hero-img" class="d-block" />
+        id="home-page-hero-img" class="d-none d-lg-block" />
+    <img src="{% static 'home/images/home_main_mobile.jpg' %}" alt="photograph of colourful wild flowers"
+        id="home-page-mobile-img" class="d-block d-lg-none" />
     <div class="container" id="homepage-text-container">
         <img class="large-logo-text" src="{% static 'home/images/WE-textonly.png' %}" alt="Wild Eden logo text" />
         <h2 id="homepage-caption">FOR ALL YOUR GARDEN NEEDS</h2>
@@ -50,7 +52,7 @@
                 </div>
             </div>
         </div>
-        <div class="col12 col-lg-5 d-flex align-items-center">
+        <div class="col12 col-lg-5 d-flex align-items-center justify-content-center">
             <img src="{% static 'home/images/walkway.jpg' %}" id="walkway-img"
                 alt="grass pathway bordered by wild flowers" />
         </div>
